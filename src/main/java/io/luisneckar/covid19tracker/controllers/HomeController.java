@@ -31,6 +31,6 @@ public class HomeController {
         model.addAttribute("locationStats", allStats);
 
         return "home";
-    }}
+    }
 }
 
