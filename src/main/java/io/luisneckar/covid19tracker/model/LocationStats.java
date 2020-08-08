@@ -5,8 +5,8 @@ package io.luisneckar.covid19tracker.model;
  * Time: 13:14
  */
 public class LocationStats {
-    public String state;
-    private String country;
+    private String state;
+    public String country;
     private int latestTotalCases;
     private int diffFromPrevDay;
 
