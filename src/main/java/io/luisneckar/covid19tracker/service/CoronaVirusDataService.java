@@ -61,6 +61,5 @@ public class CoronaVirusDataService {
         }
         this.allStats = newStats;
     }
-
 }
 
