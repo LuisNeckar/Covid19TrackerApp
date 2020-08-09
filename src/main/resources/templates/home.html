@@ -70,6 +70,13 @@
                 $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
             });
         });
+
+        $("#myRedundance").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#myRedundance tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
     });
 </script>
 
