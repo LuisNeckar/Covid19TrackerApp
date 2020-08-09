@@ -6,7 +6,7 @@ package io.luisneckar.covid19tracker.model;
  */
 public class LocationStats {
     private String state;
-    public String country;
+    private String country;
     private int latestTotalCases;
     private int diffFromPrevDay;
 
