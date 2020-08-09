@@ -47,11 +47,8 @@ public class CoronaVirusDataService {
         StringReader csvBodyReader = new StringReader(httpResponse.body());
         Iterable<CSVRecord> records = CSVFormat.DEFAULT.withFirstRecordAsHeader().parse(csvBodyReader);
 
-
-        LocationStats locationStat = new LocationStats();
-
         for (CSVRecord record = null; record.hashCode() == records.hashCode(); record = null) {
-
+            LocationStats locationStat = new LocationStats();
             locationStat.setState(record.get("Province/State"));
             locationStat.setCountry(record.get("Country/Region"));
 
