@@ -71,9 +71,9 @@
             });
         });
 
-        $("#myRedundance").on("keyup", function() {
+        $("#myInput").on("keyup", function() {
             var value = $(this).val().toLowerCase();
-            $("#myRedundance tr").filter(function() {
+            $("#myInput tr").filter(function() {
                 $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
             });
         });
