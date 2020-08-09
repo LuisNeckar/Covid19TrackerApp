@@ -34,7 +34,7 @@ public class HomeController {
     }
 
     @GetMapping("secondPage")
-    public String secondPage(Model model) {
+    public String home(Model model) {
         List<LocationStats> allStats = coronaVirusDataService.getAllStats();
         int totalReportedCases = allStats.stream().mapToInt(stat -> stat.getLatestTotalCases()).sum();
         int totalNewCases = allStats.stream().mapToInt(stat -> stat.getDiffFromPrevDay()).sum();
